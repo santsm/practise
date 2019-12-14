@@ -2,5 +2,6 @@
 From tomcat:8
 
 # Maintainer 
-MAINTAINER "aftab khan" 
-ADD target/*.war /usr/local/tomcat/webapps/
+MAINTAINER "aftab khan"
+CMD docker run -dit -v /aftvol:/usr/local/tomcat/webapps/ tomcat
+ADD target/*.war /aftvol

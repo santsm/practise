@@ -3,6 +3,7 @@ RUN apt-get update && apt-get upgrade -y
 
 MAINTAINER 'aftab khan'
 
-WORKDIR /usr/local/tomcat
+RUN docker run -v aft:/var/lib/jenkins/workspace/github-jenkins-ansible-tomcat/webapp/target/
 
-COPY target/webapp.war/ /usr/local/tomcat/webapps/
+
+ 

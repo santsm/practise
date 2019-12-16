@@ -5,4 +5,4 @@ MAINTAINER 'aftab khan'
 
 WORKDIR /usr/local/tomcat
 
-COPY target/*.war /usr/local/tomcat/webapps/
+COPY target/webapp.war /usr/local/tomcat/webapps/

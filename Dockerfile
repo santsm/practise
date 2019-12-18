@@ -4,6 +4,6 @@ RUN apt-get update && apt-get upgrade -y
 MAINTAINER 'aftab khan'
 
 
-COPY target/*.war /var/lib/docker/volumes/test/_data/webapps/
+COPY target/*.war /var/lib/docker/volumes/test/_data/
 
  

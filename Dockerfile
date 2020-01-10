@@ -1,7 +1,5 @@
 FROM tomcat
-MAINTAINER aftab khan
-RUN apt-get update && apt-get upgrade -y
-
+MAINTAINER Santosh SM
 WORKDIR /usr/local/tomcat
-
-CMD target/*.war /var/lib/docker/volumes/test/_data/webapps/
+RUN apt-get update && apt-get upgrade -y
+CMD ["(catalina.sh),(run)"]
